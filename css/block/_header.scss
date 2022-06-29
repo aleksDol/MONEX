@@ -1,0 +1,41 @@
+.header{
+    background-color: $brown;
+    padding-top: 10px;
+    padding-bottom: 30px;  
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__content{
+    display: flex;
+    align-items: center;
+
+}
+
+.header__content-block{
+    display: flex;
+    &:not(:last-child){
+        margin-right: 40px;
+    }
+}
+.header-content-icons{
+    margin-right: 9px;
+}
+
+.header-content-text{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+
+    &--big-text{
+        font-weight: 600;
+        font-size: 27px;
+
+   
+      
+    }
+}

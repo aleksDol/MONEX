@@ -1,0 +1,67 @@
+.about{
+    background-color: $yelloy;
+    position: relative;
+    padding-top: 94px;
+    padding-bottom: 146px;
+}
+
+.about__tittle{
+    position: absolute;
+    left: 0;
+    background-color: #FFFFFF;
+
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 37px;
+    text-transform: uppercase;
+
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 126px;
+    padding-right: 45px;
+}
+
+.about__cards-folder{
+    padding-top: 150px;
+    display: flex;
+}
+
+.about__card{
+    background-color: #FFFFFF;
+    padding-top: 49px;
+    padding-left: 39px;
+    padding-bottom: 58px;
+    width: 242px;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &-tittle{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 27px;
+        color: $black;
+    }
+
+    &-bigtittle{
+        font-family: 'Oswald';
+        font-weight: 600;
+        font-size: 34px;
+
+        color: $yelloy;
+
+        margin-bottom: 5px;
+
+    }
+
+    &-text{
+        font-family: 'Roboto';
+        font-weight: 600;
+        font-size: 18px;
+
+        color: $black;
+
+        max-width: 122px;
+    }
+}

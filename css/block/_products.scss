@@ -1,0 +1,92 @@
+.products{
+    padding-top: 130px;
+    position: relative;
+    padding-bottom: 117px;
+}
+
+.products__tittle{
+    background-color: $yelloy;
+
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 37px;
+    color: $black;
+
+    position: absolute;
+    left: 0;
+    padding-left: 130px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 63px;
+
+    margin-bottom: 93px;
+}
+
+.products__folder{
+    padding-top: 190px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 33px;
+    row-gap: 45px;
+    justify-content: center;
+
+}
+
+.products__card{
+
+    border: 1.5px solid $black;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 32px;
+
+    &-img{
+        margin-bottom: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    &-tittle{
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 20px;
+        color: $black;
+        margin-bottom: 13px;
+        margin-left: 36px;
+    }
+
+    &-button{
+        background-color: $yelloy;
+        color: $black;
+
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 25px;
+        padding: 17px 120px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+.products__card-characteristic{
+    margin-bottom: 36px;
+    margin-left: 36px;
+}
+
+
+.card-characteristic{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: $black;
+    &:not(:last-child){
+        margin-bottom: 7px;
+    }
+}
+

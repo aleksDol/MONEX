@@ -1,0 +1,136 @@
+.contact{
+    padding-top: 100px;
+    padding-bottom: 115px;
+    position: relative;
+}
+.contact__inner{
+ 
+}
+.contact__tittle{
+    position: absolute;
+    left: 0;
+
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 37px;
+
+    background-color: $yelloy;
+    color: $black;
+
+    padding-left: 129px;
+    padding-right: 49px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    text-transform: uppercase;
+}
+
+.contact__content-side{
+    display: flex;
+    padding-top: 200px;
+}
+
+.contact__left-side{
+    width: 50%;
+    margin-right: 70px;
+
+}
+
+.contact-photo{
+    width: 100%;
+    height: auto;
+
+}
+
+.contact__text{
+    padding: 40px 65px;
+    border: 1.5px solid $black;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 26px;
+
+    color: $black;
+}
+
+.contact__right-side{
+    width: 50%;
+
+}
+
+.contact__right-side-subtittle{
+    font-family: 'Roboto';
+    color: $yelloy;
+    margin-bottom: 42px;
+    font-weight: 500;
+    font-size: 33px;
+
+}
+
+.contact__form{
+
+}
+
+.cotact__input{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 37px;
+
+    &:not(:last-child){
+        margin-bottom: 13px;
+    }
+}
+
+.contact__boxFourCheck{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.cotact__input-checkbox{
+   
+    height: 23px;
+    width: 23px;
+}
+
+.contact__lable-check{
+    align-items: center;
+
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12.8571px;
+    color: $black;
+
+    margin-left: 15px;
+}
+
+
+.contact__form-submit{
+    padding: 34px 205px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+    background-color: $brown;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+
+.contact__right-side_privacy-info{
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.privacy-info-text{
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 12px;
+    margin-left: 12px;
+}
