@@ -7,9 +7,7 @@
 .products__tittle{
     background-color: $yelloy;
 
-    font-family: 'Oswald';
-    font-weight: 400;
-    font-size: 37px;
+
     color: $black;
 
     position: absolute;
@@ -20,6 +18,11 @@
     padding-right: 63px;
 
     margin-bottom: 93px;
+
+    @media (max-width:$mobile-sm){
+        padding-left: 50px;
+        padding-right: 20px;
+    }
 }
 
 .products__folder{
@@ -31,15 +34,35 @@
     row-gap: 45px;
     justify-content: center;
 
+    @media (max-width:$tablet){
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width:$mobile){
+        grid-template-columns:1fr;
+    }
+
 }
 
 .products__card{
-
     border: 1.5px solid $black;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 8px;
-    padding-bottom: 32px;
+    padding-bottom: 37px;
+
+    @media (max-width:$mobile){
+        width: 80%;
+        justify-self: center;
+    }
+
+    @media (max-width:$mobile-sm){
+        width: 100%;
+    }
+
+
+
+    
 
     &-img{
         margin-bottom: 25px;
@@ -54,6 +77,12 @@
         color: $black;
         margin-bottom: 13px;
         margin-left: 36px;
+
+        @media (max-width:$mobile-sm){
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
     }
 
     &-button{
@@ -67,16 +96,31 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        max-height: 63px;
+
+        @media (max-width:$mobile){
+            width: 70%;
+        }
+
+        @media (max-width:$mobile-sm){
+            width: 70%;
+            padding: 17px 0;
+        }
 
     }
 
 }
 
+
 .products__card-characteristic{
     margin-bottom: 36px;
     margin-left: 36px;
+    @media (max-width:$mobile-sm){
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
-
 
 .card-characteristic{
     font-family: 'Roboto';

@@ -9,7 +9,13 @@
     display: flex;
     border-bottom: 1.5px solid $yelloy;
     justify-content: space-between;
+
+    @media (max-width:$mobile-sm){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
+
 
 .footer__content-block{
     display: flex;
@@ -20,10 +26,16 @@
     &:not(:last-child){
         margin-bottom: 20px;
     }
+
+ 
 }
 
 .footer__content-brand{
     position: relative;
+
+    @media (max-width:$tablet){
+        display: none;
+    }
 }
 
 .footer__content-brand-autor{
@@ -95,4 +107,11 @@
     margin-top: 18px;
     text-decoration-line: underline;
     color: #FFFFFF;
+}
+
+.footer__content-nav--mrg{
+    margin-bottom: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }

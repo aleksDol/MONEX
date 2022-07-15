@@ -10,6 +10,20 @@
     margin-left: 50px;
     margin-right: 50px;
 
+    @media (max-width:$mobile-sm){
+        margin-left: 0;
+        margin-right: 0;
+        min-width: 100%;
+        padding: 20px 25px;
+    }
+
+    @media (max-width:$mobile){
+        padding: 20px 25px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90%;
+    }
+
     &-tittle{
         font-family: 'Oswald';
         font-weight: 500;
@@ -17,6 +31,12 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-bottom: 4px;
+
+        @media (max-width:$tablet){
+            font-size: 30px;
+        }
+
+       
     }
 
     &-text{
@@ -25,6 +45,14 @@
         font-size: 30px;
         color: #FFFFFF;
         margin-bottom: 26px;
+
+        @media (max-width:$tablet){
+            font-size: 20px;
+        }
+
+        @media (max-width:$mobile){
+            font-size: 17px;
+        }
     }
 
     &-button{
@@ -38,5 +66,14 @@
         font-weight: 600;
         font-size: 30px;
         color: $black;
+
+        @media (max-width:$tablet){
+            font-size: 20px;
+        }
+
+        @media (max-width:$mobile){
+            font-size: 17px;
+            padding: 15px 40px;
+        }
     }
 }

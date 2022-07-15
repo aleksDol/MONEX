@@ -10,20 +10,29 @@
     left: 0;
     background-color: #FFFFFF;
 
-    font-family: 'Oswald';
-    font-weight: 400;
-    font-size: 37px;
-    text-transform: uppercase;
-
     padding-top: 17px;
     padding-bottom: 17px;
     padding-left: 126px;
     padding-right: 45px;
+
+    @media (max-width:$mobile-sm){
+        padding-left: 50px;
+        padding-right: 20px;
+    }
 }
 
 .about__cards-folder{
     padding-top: 150px;
     display: flex;
+    @media (max-width:$tablet){
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    @media (max-width:$tablet){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .about__card{
@@ -35,6 +44,12 @@
 
     &:not(:last-child){
         margin-right: 30px;
+        @media (max-width:$tablet){
+            margin-bottom: 60px;
+        }
+        @media (max-width:$mobile-sm){
+            margin-right: 0px;
+        }
     }
 
     &-tittle{

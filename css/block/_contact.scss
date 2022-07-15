@@ -10,10 +10,6 @@
     position: absolute;
     left: 0;
 
-    font-family: 'Oswald';
-    font-weight: 400;
-    font-size: 37px;
-
     background-color: $yelloy;
     color: $black;
 
@@ -23,22 +19,42 @@
     padding-bottom: 17px;
 
     text-transform: uppercase;
+
+    @media (max-width:$mobile-sm){
+        padding-left: 50px;
+        padding-right: 20px;
+    }
 }
 
 .contact__content-side{
     display: flex;
     padding-top: 200px;
+
+    @media (max-width:$tablet) {
+        flex-wrap: wrap;
+    }
 }
 
 .contact__left-side{
     width: 50%;
     margin-right: 70px;
 
+    @media (max-width:$tablet){
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+
 }
 
 .contact-photo{
     width: 100%;
     height: auto;
+
+    @media (max-width:$tablet) {
+        max-width: 1000px;
+    }
 
 }
 
@@ -51,11 +67,20 @@
     font-size: 26px;
 
     color: $black;
+
+    @media (max-width:$mobile){
+        font-size: 18px;
+        padding: 40px 55px;
+    }
 }
 
 .contact__right-side{
     width: 50%;
-
+    @media (max-width:$tablet){
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .contact__right-side-subtittle{
@@ -65,10 +90,31 @@
     font-weight: 500;
     font-size: 33px;
 
+    @media (max-width:$mobile-sm){
+        font-size: 25px;
+    }
+
 }
 
 .contact__form{
+    @media (max-width:$tablet) {
+        max-width: 800px;
+      
+    }
 
+    @media (max-width:$mobile) {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+
+    @media (max-width:$mobile-sm) {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
 }
 
 .cotact__input{
@@ -79,6 +125,15 @@
 
     &:not(:last-child){
         margin-bottom: 13px;
+    }
+
+    &:last-child{
+        margin-bottom: 40px;
+    }
+
+    @media (max-width:$mobile){
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
@@ -109,17 +164,41 @@
 
 
 .contact__form-submit{
+    
     padding: 34px 205px;
     font-family: 'Roboto';
     font-weight: 600;
     font-size: 30px;
     color: #FFFFFF;
+    display: block;
     background-color: $brown;
     border-radius:5px ;
     -webkit-border-radius:5px ;
     -moz-border-radius:5px ;
     -ms-border-radius:5px ;
     -o-border-radius:5px ;
+
+    @media (max-width:$tablet){
+        width: 100%;
+        max-width: 600px;
+    }
+
+    @media (max-width:$mobile){
+        width: 70%;
+        font-size: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+    }
+
+    @media (max-width:$mobile-sm){
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    
+    }
 }
 
 .contact__right-side_privacy-info{

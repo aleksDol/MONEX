@@ -7,6 +7,21 @@
 
 }
 
+.tittle{
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 37px;
+    text-transform: uppercase;
+
+    @media (max-width:$tablet){
+        font-size: 25px;
+    }
+
+    @media (max-width:$mobile-sm){
+        font-size: 20px;
+    }
+}
+
 .btn{
     border: 0;
     background: none;
